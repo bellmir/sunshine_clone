@@ -1,4 +1,7 @@
 /* Common */
+html {
+	scroll-behavior: smooth;
+}
 body{
   height: 10000px;
 }
@@ -232,4 +235,68 @@ header .main-banner .swiper-container img.scrollDown{
 }
 .company-banner .cards .card .card-content .btn-shortcut{
   margin: 0 auto;
+}
+/* business-banner */
+.business-banner{
+  width: 100%;
+  height: 750px;
+  background-image: url("http://bdmp-007.cafe24.com/bizdemo113320/img/bg_business.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+.business-banner .banner-title{
+  font-size: 45px;
+  font-weight: 700;
+  padding-top: 100px;
+}
+.business-banner .banner-description{
+  font-size: 14px;
+  padding-top: 19px;
+  padding-bottom: 78px;
+  line-height: 22px;
+}
+.business-banner .businessPr{
+  display: flex;
+  justify-content: center;
+}
+.business-banner .businessPr .prContent{
+  padding-right: 28px;
+}
+.business-banner .businessPr .prContent:last-child{
+  padding-right: 0;
+}
+.business-banner .businessPr .prContent>p{
+  font-size: 15px;
+  line-height: 23px;
+  padding-top: 20px;
+}
+/* etcBoard */
+.etcBoard{
+  width: 100%;
+  height: 430px;
+  margin: 50px 0;
+  background-color: #f5f5f5;
+}
+.etcBoard .inner{
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.etcBoard .serviceCenter{
+
+}
+.etcBoard .serviceCenter{
+
+}
+.etcBoard div[class*="board"]{
+  background-color: #fff;
+  width: 432px;
+  height: 280px;
+  margin: 75px 30px 30px 30px;
+}
+.etcBoard div[class*="board"] {
+
 }
