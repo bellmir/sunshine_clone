@@ -1,0 +1,235 @@
+/* Common */
+body{
+  height: 10000px;
+}
+img{
+  display: block;
+}
+body{
+  box-sizing: border-box;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.hide{
+  height: 0;
+  overflow: hidden;
+}
+.inner{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.btn-shortcut{
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 35px;
+  width: 140px;
+  font-size: 14px;
+  transition: .5s;
+}
+.btn-shortcut:hover{
+  color: #000;
+  background-color: rgba(255,255,255,.5);
+}
+
+/* root */
+:root{
+  --lightGreyText: #ddd;
+  --darkgreyText: #333;
+  --skyblue: rgb(111, 202, 255);
+}
+
+/* Header */
+header{
+  position: relative;
+}
+/* Header GNB */
+header .gnb{
+  color: var(--darkgreyText);
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+header .gnb .inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  max-width: 1200px;
+}
+header .gnb .inner .logo{
+  position: absolute;
+  left: 57px;
+}
+header .gnb .inner .menu{
+  display: flex;
+  position: absolute;
+  right: 40px;
+}
+header .gnb .inner .menu li>a{
+  font-size: 17px;
+  padding: 35px 45px;
+  font-weight: 700;
+}
+/* Header main-banner */
+header .main-banner{
+  margin-top: 90px;
+  position: relative;
+}
+header .main-banner .swiper-container{
+  height: 750px;
+  width: 100%;
+}
+header .main-banner .swiper-container .swiper-slide .bgImg{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+header .main-banner .swiper-container .swiper-slide .bgImg1{
+  background-image: url("http://bdmp-007.cafe24.com/bizdemo113320/img/main01.jpg");
+}
+header .main-banner .swiper-container .swiper-slide .bgImg2{
+  background-image: url("http://bdmp-007.cafe24.com/bizdemo113320/img/main02.jpg");
+}
+header .main-banner .swiper-container .swiper-slide .bgImg3{
+  background-image: url("http://bdmp-007.cafe24.com/bizdemo113320/img/main03.jpg");
+}
+header .main-banner .swiper-container .swiper-slide .text{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+header .main-banner .swiper-container .swiper-pagination{
+  bottom: 140px;
+  left: 0;
+  right: 0;
+}
+header .main-banner .swiper-container .swiper-pagination .swiper-pagination-bullet{
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  outline: none;
+  background-color: #fff;
+  opacity: 1;
+}
+header .main-banner .swiper-container .swiper-pagination .swiper-pagination-bullet:hover,
+header .main-banner .swiper-container .swiper-pagination .swiper-pagination-bullet-active{
+  background-color: var(--skyblue);
+}
+header .main-banner .swiper-container .swiper-prev,
+header .main-banner .swiper-container .swiper-next
+{
+  position: absolute;
+  top: 300px;
+  color: var(--lightGreyText);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 1;
+  transition: opacity .3s;
+}
+header .main-banner .swiper-container .swiper-prev{
+  left: 20px;
+}
+header .main-banner .swiper-container .swiper-next{
+  right: 20px;
+}
+header .main-banner .swiper-container .swiper-prev .material-icons,
+header .main-banner .swiper-container .swiper-next .material-icons{
+  font-size: 50px;
+}
+header .main-banner .swiper-container .swiper-prev:hover,
+header .main-banner .swiper-container .swiper-next:hover{
+  opacity: 0.7;
+}
+header .main-banner .swiper-container img.scrollDown{
+  position: absolute;
+  height: 57px;
+  width: 60px;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Section */
+/* company-banner */
+.company-banner{
+}
+.company-banner .inner{
+  max-width: 1635px;
+  height: 856px;
+  text-align: center;
+  background-image: url("http://bdmp-007.cafe24.com/bizdemo113320/img/bg_company.jpg");
+  background-size: cover;
+}
+.company-banner .banner-title{
+  font-size: 45px;
+  font-weight: 700;
+  padding-top: 100px;
+}
+.company-banner .banner-description{
+  padding-top: 19px;
+  padding-bottom: 78px;
+  font-size: 14px;
+  color: #444;
+  line-height: 22px;
+}
+.company-banner .cards{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.company-banner .cards .card{
+  height: 480px;
+  width: 31.33%;
+  max-width: 440px;
+  padding-right: 3%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.company-banner .cards .card:nth-child(1){
+  background-image: url("http://bdmp-007.cafe24.com/bizdemo113320/img/banner01.jpg");
+}
+.company-banner .cards .card:nth-child(2){
+  background-image: url("http://bdmp-007.cafe24.com/bizdemo113320/img/banner02.jpg");
+}
+.company-banner .cards .card:nth-child(3){
+  background-image: url("http://bdmp-007.cafe24.com/bizdemo113320/img/banner03.jpg");
+  padding-right: 0;
+}
+.company-banner .cards .card .card-content .content__title{
+  font-size: 18px;
+  font-weight: 600;
+}
+.company-banner .cards .card .card-content .content__description{
+  padding-top: 15px;
+  padding-bottom: 18px;
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.company-banner .cards .card .card-content .btn-shortcut{
+  margin: 0 auto;
+}

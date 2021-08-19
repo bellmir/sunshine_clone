@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>분노의 홈페이지 클론</title>
+    <meta name="author" content="bellmir" />
+    <meta name="keyword" content="clone coding" />
+    <meta name="description" content="디자인 보고 클론코딩하기" />
+    <!-- https://d.cafe24.com/product/product_homepage_view.php?productTypeCode=PTHD&productCode=PTHD681736 -->
+    <!-- http://bdmp-007.cafe24.com/bizdemo113320/index.php -->
+    
+    <!-- Reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Material Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <!-- main.css. *주의 Reset.css 뒤에 들어가야함 -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- main.js *주의 defer option 추가됨 -->
+    <script defer src="./js/main.js"></script>
+
+  </head>
+  
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- header gnb -->
+      <nav class="gnb">
+        <div class="inner">
+          <div class="logo">
+            <a href="/">
+              <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/logo.png" alt="main-logo" />
+            </a>
+          </div>
+          <ul class="menu">
+            <li><a href="javascript:void(0)">회사소개</a></li>
+            <li><a href="javascript:void(0)">사업분야</a></li>
+            <li><a href="javascript:void(0)">갤러리</a></li>
+            <li><a href="javascript:void(0)">온라인문의</a></li>
+            <li><a href="javascript:void(0)">커뮤니티</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!-- header main banner -->
+      <div class="main-banner">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="bgImg bgImg1"></div>
+              <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/main_visual_text.png" alt="" class="text" />
+            </div>
+            <div class="swiper-slide">
+              <div class="bgImg bgImg2"></div>
+              <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/main_visual_text02.png" alt="" class="text" />
+            </div>
+            <div class="swiper-slide">
+              <div class="bgImg bgImg3"></div>
+              <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/main_visual_text03.png" alt="" class="text" />
+            </div>
+          </div>
+          <div class="swiper-next">
+            <div class="material-icons">arrow_forward_ios</div>
+          </div>
+          <div class="swiper-prev">
+            <div class="material-icons">arrow_back_ios</div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/arrow.png" alt="" class="scrollDown"/>
+        </div>
+      </div>
+    </header>
+
+    <!-- Company Banner -->
+    <section class="company-banner">
+      <div class="inner">
+        <h3 class="banner-title">COMPANY</h3>
+        <p class="banner-description">선샤인은 최고의 크리에이티브와 차별화된 전문 디자인 경험을 바탕으로
+          <br/>영역의 한계를 넘어 항상 최고의 솔루션을 제공합니다.</p>
+        <div class="cards">
+          <div class="card">
+            <div class="card-content">
+              <h4 class="content__title">회사소개</h4>
+              <p class="content__description">회사만의 특화되고 세분화된 사업영역으로
+                <br/>최고의 비즈니스를 제안합니다.</p>
+              <a href="javascript:void(0)" class="btn-shortcut">
+                바로가기
+                <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/btn-arrow-01.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="content__title">사업분야</h4>
+              <p class="content__description">선샤인은 최고의 기술력과 최상의
+                <br/>품질로 보답하여 드리겠습니다.</p>
+              <a href="javascript:void(0)" class="btn-shortcut">
+                바로가기
+                <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/btn-arrow-01.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="content__title">온라인문의</h4>
+              <p class="content__description">온라인 무료상담 및 견적받기로 빠르고
+                <br/>효율적인 상담을 받으세요.</p>
+              <a href="javascript:void(0)" class="btn-shortcut">
+                바로가기
+                <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/btn-arrow-01.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
