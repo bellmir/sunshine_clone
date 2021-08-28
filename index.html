@@ -12,24 +12,33 @@
     
     <!-- Reset -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css" />
+    
+    <!-- lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Material Icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-    <!-- main.css. *주의 Reset.css 뒤에 들어가야함 -->
+    <!-- main.css. 주의 Reset.css 뒤에 들어가야함 -->
     <link rel="stylesheet" href="./css/main.css" />
-    <!-- main.js *주의 defer option 추가됨 -->
+    <!-- main.js 주의 defer option 추가됨 -->
     <script defer src="./js/main.js"></script>
 
   </head>
   
   <body>
     <!-- Header -->
-    <header>
+    <header id="top">
       <!-- header gnb -->
       <nav class="gnb">
         <div class="inner">
@@ -82,11 +91,13 @@
     <!-- Company Banner -->
     <section class="company-banner" id="company">
       <div class="inner">
-        <h3 class="banner-title">COMPANY</h3>
-        <p class="banner-description">선샤인은 최고의 크리에이티브와 차별화된 전문 디자인 경험을 바탕으로
-          <br/>영역의 한계를 넘어 항상 최고의 솔루션을 제공합니다.</p>
+        <div class="bannerInfo riseAnimation">
+          <h3 class="banner-title">COMPANY</h3>
+          <p class="banner-description">선샤인은 최고의 크리에이티브와 차별화된 전문 디자인 경험을 바탕으로
+            <br/>영역의 한계를 넘어 항상 최고의 솔루션을 제공합니다.</p>
+        </div>
         <div class="cards">
-          <div class="card">
+          <div class="card riseAnimation animationDelay1">
             <div class="card-content">
               <h4 class="content__title">회사소개</h4>
               <p class="content__description">회사만의 특화되고 세분화된 사업영역으로
@@ -97,7 +108,7 @@
               </a>
             </div>
           </div>
-          <div class="card">
+          <div class="card riseAnimation animationDelay2">
             <div class="card-content">
               <h4 class="content__title">사업분야</h4>
               <p class="content__description">선샤인은 최고의 기술력과 최상의
@@ -108,7 +119,7 @@
               </a>
             </div>
           </div>
-          <div class="card">
+          <div class="card riseAnimation animationDelay3">
             <div class="card-content">
               <h4 class="content__title">온라인문의</h4>
               <p class="content__description">온라인 무료상담 및 견적받기로 빠르고
@@ -125,21 +136,23 @@
 
     <!-- Business Banner -->
     <section class="business-banner">
-      <h3 class="banner-title">Business</h3>
-      <p class="banner-description">고객님의 요구에 기획부터 홈페이지에 필요한 이미지 촬영, 전자카다로그 제작,
-        <br/>포탈싸이트 등록, 키워드광고, 홈페이지 제작과 활용에 필요한 모든 서비스를 제공하고 있습니다.</p>
-      <div class="businessPr">
+      <div class="bannerInfo riseAnimation">
+        <h3 class="banner-title">Business</h3>
+        <p class="banner-description">고객님의 요구에 기획부터 홈페이지에 필요한 이미지 촬영, 전자카다로그 제작,
+          <br/>포탈싸이트 등록, 키워드광고, 홈페이지 제작과 활용에 필요한 모든 서비스를 제공하고 있습니다.</p>
+      </div>
+      <div class="businessPr riseAnimation animationDelay1">
         <div class="prContent">
           <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/business-btn-01.png" alt="" />
           <p>정직과 신뢰를 기반으로
             <br/>고객만족을 위해 노력하겠습니다.</p>
         </div>
-        <div class="prContent">
+        <div class="prContent riseAnimation animationDelay2">
           <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/business-btn-02.png" alt="" />
           <p>합리적인 가격과 제품으로
             <br/>보답하겠습니다.</p>
         </div>
-        <div class="prContent">
+        <div class="prContent riseAnimation animationDelay3">
           <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/business-btn-03.png" alt="" />
           <p>고객과의 약속은
             <br/>임무가 아닌 신뢰입니다.</p>
@@ -150,7 +163,7 @@
     <!-- etcBoard -->
     <section class="etcBoard">
       <div class="inner">
-        <div class="serviceCenter">
+        <div class="serviceCenter slideAnimation">
           <h4 class="serviceCenter__title">고객센터</h4>
           <p class="serviceCenter__description">온라인상담실 운영시간은
             <br/>09:00 ~ 06:30 입니다.</p>
@@ -159,7 +172,7 @@
           <p class="serviceCenter__email">E-mail : gijung23@nate.com</p>
           <a href="javascript:void(0)" class="btn-shortcut">온라인문의<img src="http://bdmp-007.cafe24.com/bizdemo113320/img/btn-arrow-02.png" alt=""></a>
         </div>
-        <div class="board">
+        <div class="board slideAnimation animationDelay1">
           <span class="title">공지사항</span>
           <a href="javascript:void(0)" class="btn-more">MORE+</a>
           <table class="list">
@@ -189,7 +202,7 @@
             </tr>
           </table>
         </div>
-        <div class="board">
+        <div class="board slideAnimation animationDelay2">
           <span class="title">질문과답변</span>
           <a href="javascript:void(0)" class="btn-more">MORE+</a>
           <table class="list">
@@ -235,5 +248,13 @@
       <p class="footer__contact">Tel : 070-7155-1979 / Fax : 02-2139-1142 / E-mail : gijung23@nate.com</p>
       <p class="footer__copyright">Copyright ⓒ Sunsine.com All Rights Reserved.</p>
     </footer>
+
+    <!-- toTop btn -->
+    <div id="toTop">
+      <a href="#top">
+        <img src="http://bdmp-007.cafe24.com/bizdemo113320/img/btn_top.png" alt="">
+      </a>
+    </div>
+
   </body>
 </html>

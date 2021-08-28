@@ -21,6 +21,8 @@ a{
   margin: 0 auto;
   position: relative;
 }
+
+/* btn */
 .btn-shortcut{
   background-color: transparent;
   border: 1px solid #fff;
@@ -39,12 +41,42 @@ a{
   background-color: rgba(255,255,255,.6);
 }
 
+/* animation */
+.riseAnimation{
+  opacity: 0;
+  transform: translateY(35px);
+  transition: .6s;
+}
+.showRise{
+  opacity: 1;
+  transform: translateY(0);
+}
+.slideAnimation{
+  opacity: 0;
+  transform: translateX(-35px);
+  transition: .6s;
+}
+.showSlide{
+  opacity: 1;
+  transform: translateX(0);
+}
+.animationDelay1{
+  transition-delay: .3s;
+}
+.animationDelay2{
+  transition-delay: .5s;
+}
+.animationDelay3{
+  transition-delay: .7s;
+}
+
 /* root */
 :root{
   --lightGreyText: #ddd;
   --darkgreyText: #333;
   --skyblue: rgb(111, 202, 255);
 }
+
 
 /* Header */
 header{
@@ -66,6 +98,7 @@ header .gnb .inner{
   justify-content: center;
   height: 90px;
   max-width: 1200px;
+  min-width: 1100px;
 }
 header .gnb .inner .logo{
   position: absolute;
@@ -183,12 +216,12 @@ header .main-banner .swiper-container img.scrollDown{
   background-image: url("http://bdmp-007.cafe24.com/bizdemo113320/img/bg_company.jpg");
   background-size: cover;
 }
-.company-banner .banner-title{
+.company-banner .bannerInfo .banner-title{
   font-size: 45px;
   font-weight: 700;
   padding-top: 100px;
 }
-.company-banner .banner-description{
+.company-banner .bannerInfo .banner-description{
   padding-top: 19px;
   padding-bottom: 78px;
   font-size: 14px;
@@ -279,6 +312,7 @@ header .main-banner .swiper-container img.scrollDown{
 }
 .etcBoard .inner{
   max-width: 1200px;
+  min-width: 930px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,4 +436,23 @@ footer p{
 }
 footer .footer__copyright{
   margin: 5px 0;
+}
+
+/* toTop btn */
+#toTop{
+  width: 42px;
+  height: 42px;
+  background-color: #484848;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 15%;
+  right: 10%;
+  z-index: 9;
+  display: none;
+}
+#toTop:hover{
+  background-color: var(--skyblue);
 }
