@@ -1,6 +1,7 @@
 ## 선샤인 반응형 웹페이지 클론코딩
 
-#### http://bdmp-007.cafe24.com/bizdemo113320/index.php
+#### 원본 사이트 : http://bdmp-007.cafe24.com/bizdemo113320/index.php
+#### github Page : https://bellmir.github.io/sunshine_clone/
 ---
 ##### 작업기간 : 2021.08.17 ~ 2021.08.28  
 
