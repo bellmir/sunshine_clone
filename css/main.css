@@ -2,9 +2,6 @@
 html {
 	scroll-behavior: smooth;
 }
-body{
-  height: 10000px;
-}
 img{
   display: block;
 }
@@ -26,7 +23,7 @@ a{
 }
 .btn-shortcut{
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -39,7 +36,7 @@ a{
 }
 .btn-shortcut:hover{
   color: #000;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255,255,255,.6);
 }
 
 /* root */
@@ -52,6 +49,7 @@ a{
 /* Header */
 header{
   position: relative;
+  overflow: hidden;
 }
 /* Header GNB */
 header .gnb{
@@ -206,7 +204,7 @@ header .main-banner .swiper-container img.scrollDown{
   height: 480px;
   width: 31.33%;
   max-width: 440px;
-  padding-right: 3%;
+  margin-right: 3%;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -220,7 +218,7 @@ header .main-banner .swiper-container img.scrollDown{
 }
 .company-banner .cards .card:nth-child(3){
   background-image: url("http://bdmp-007.cafe24.com/bizdemo113320/img/banner03.jpg");
-  padding-right: 0;
+  margin-right: 0;
 }
 .company-banner .cards .card .card-content .content__title{
   font-size: 18px;
@@ -286,17 +284,122 @@ header .main-banner .swiper-container img.scrollDown{
   align-items: center;
 }
 .etcBoard .serviceCenter{
-
+  margin-top: 75px;
+  width: 22%;
 }
-.etcBoard .serviceCenter{
-
+.etcBoard .serviceCenter .serviceCenter__title{
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 40px;
+  padding-bottom: 10px;
 }
-.etcBoard div[class*="board"]{
+.etcBoard .serviceCenter .serviceCenter__description{
+  font-size: 12px;
+  color: #777;
+  line-height: 18px;
+}
+.etcBoard .serviceCenter .serviceCenter__phone{
+  font-size: 30px;
+  color: #888;
+  line-height: 50px;
+  margin: 5px 0;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.etcBoard .serviceCenter .serviceCenter__phone span{
+  color: #356fbe;
+}
+.etcBoard .serviceCenter .serviceCenter__fax{
+  font-size: 20px;
+  color: #888;
+  line-height: 22px;
+  margin: 5px 0;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.etcBoard .serviceCenter .serviceCenter__fax span{
+  color: #666;
+}
+.etcBoard .serviceCenter .serviceCenter__email{
+  font-size: 12px;
+  color: #6f6f6f;
+  line-height: 15px;
+  margin-top: 10px;
+  letter-spacing: 0.51px;
+}
+.etcBoard .serviceCenter .btn-shortcut{
+  border-color: #1e1e1e;
+  color: #1e1e1e;
+  font-size: 13px;
+  margin-top: 20px;
+  width: 150px;
+}
+.etcBoard .board{
   background-color: #fff;
-  width: 432px;
+  width: 31%;
   height: 280px;
-  margin: 75px 30px 30px 30px;
+  margin: 75px 40px 0 0;
+  padding: 0 30px;
 }
-.etcBoard div[class*="board"] {
+.etcBoard .board:last-child{
+  margin-right: 0;
+}
+.etcBoard .board .title{
+  float: left;
+  color: #1e1e1e;
+  font-size: 23px;
+  font-weight: 600;
+  padding: 30px 0;
+  line-height: 40px;
+}
+.etcBoard .board .btn-more{
+  float: right;
+  padding: 30px 0;
+  color: #727272;
+  font-size: 9px;
+  margin-right: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.etcBoard .board .list{
+  float: left;
+  font-size: 12px;
+  height: 140px;
+  width: 100%;
+  line-height: 20px;
+  padding-top: 10px;
+}
+.etcBoard .board .list a:hover{
+  text-decoration: underline;
+}
+.etcBoard .board .list tr td:first-child::before{
+  content: url("http://bdmp-007.cafe24.com/bizdemo113320/img/component/board/board_1/output_ol.gif");
+}
 
+/* Footer */
+footer{
+  width: 100%;
+  background-color: #303030;
+  padding: 20px 0 10px;
+  text-align: center;
+}
+footer .footer__nav{
+  display: flex;
+  justify-content: center;
+  color: #ccc;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+footer .footer__nav li{
+  padding: 0 3px 0 8px;
+}
+footer p{
+  color: #8d8b8b;
+  font-size: 12px;
+  margin-top: 3px;
+  line-height: 16px;
+}
+footer .footer__copyright{
+  margin: 5px 0;
 }
